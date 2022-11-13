@@ -1,3 +1,4 @@
+import 'package:firstproject/Screens/OTP_verification.dart';
 import 'package:firstproject/Screens/home_screen.dart';
 import 'package:firstproject/widgets/snackbar.dart';
 import 'package:firstproject/widgets/theme.dart';
@@ -174,7 +175,8 @@ class _SigninPageState extends State<SigninPage> {
               height: 40,
               child: TextButton(
                 child: Text("Forget Password?"),
-                onPressed: () {
+                onPressed: () { 
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ChooseVerScreen(),));
 
                 },
               ),

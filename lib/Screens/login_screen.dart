@@ -64,7 +64,7 @@ class _loginScreenState extends State<loginScreen>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 20),
+                  padding: const EdgeInsets.only(top: 20),
                   child: _buildMenuBar(context),
                 ),
                 Expanded(
@@ -89,7 +89,7 @@ class _loginScreenState extends State<loginScreen>
                       children: <Widget>[
                         ConstrainedBox(constraints: const BoxConstraints.expand(),
                         child: const SigninPage(),),
-                        ConstrainedBox(constraints: BoxConstraints.expand(),child: const SignUp(),)
+                        ConstrainedBox(constraints: const BoxConstraints.expand(),child: const SignUp(),)
                       ],
                     ))
               ],
